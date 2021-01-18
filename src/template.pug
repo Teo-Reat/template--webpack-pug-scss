@@ -3,8 +3,45 @@ html(lang="en")
     head
         meta(name='viewport' content='width=device-width, initial-scale=1.0')
         meta(charset='UTF-8')
-        title Webpack
+        title Test Digital Design
     body.body
-        header.header This is header
-        main.main Hello, background must be cornflowerblue!
-        footer.footer This is footer
+        header.header
+        main.main
+            .main__menu.menu
+                ul.menu__list
+                    li.menu__item
+                        a.menu__link(href='#') Элемент меню
+                    li.menu__item
+                        a.menu__link(href='#') Элемент меню с наведением
+                    li.menu__item
+                        a.menu__link(href='#') Еще один элемент у которого очень длинный текст
+                    li.menu__item
+                        a.menu__link(href='#') Еще один элемент
+                    li.menu__item
+                        a.menu__link(href='#') Еще один элемент
+            .main__form.form
+                .form__title Регистрация
+                .form__input-wrapper
+                    label.form__label
+                        span.form__input-description E-mail
+                        input.form__input(type="email" placeholder="example@site.domain" name="email" required)
+                    label.form__label.form__label-half
+                        span.form__input-description Пароль
+                        input.form__input(type="password" placeholder="password" name="pass" required)
+                    label.form__label.form__label-half
+                        span.form__input-description Повторите пароль
+                        input.form__input(type="password" placeholder="password" name="pass-repeat" required)
+                    label.form__label
+                        span.form__input-description ФИО
+                        input.form__input(type="text" placeholder="Игорев Игорь Игоревич" name="fullname" required)
+                    label.form__label.form__label-half
+                        span.form__input-description Возраст
+                        input.form__input(type="number" placeholder="18" name="age" required)
+                .form__submit-wrapper
+                    button.form__submit(type="submit") Отправить
+                    button.form__reset(type="reset") Отмена
+            .main__stepper.stepper
+                .stepper__item Шаг 1
+                .stepper__item.stepper__item--active Шаг 2
+                .stepper__item Шаг 3
+        footer.footer
