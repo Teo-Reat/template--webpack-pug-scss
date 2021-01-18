@@ -5,9 +5,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --config webpack.dev.js --open",
-    "build": "webpack --config webpack.prod.js",
-    "serve": "webpack serve --config webpack.dev.js"
+    "start": "webpack serve --config webpack.dev.js --open",
+    "build": "webpack --config webpack.prod.js"
   },
   "keywords": [],
   "author": "Teo Reat",
@@ -39,6 +38,7 @@
     "autoprefixer": "^9.0.0",
     "browserslist": "^4.13.0",
     "clean-webpack-plugin": "^3.0.0",
+    "normalize-scss": "^7.0.1",
     "postcss-cli": "^8.3.1",
     "pug": "^3.0.0",
     "pug-loader": "^2.4.0"
